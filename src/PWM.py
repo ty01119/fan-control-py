@@ -1,4 +1,5 @@
 import RPi.GPIO as GPIO
+import time
 
 class PWM:
   def __init__(self):
@@ -6,7 +7,7 @@ class PWM:
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(self.pwmPin, GPIO.OUT)
 
-    self.pwm = GPIO.PWM(self.pwmPin, 25000)
+    self.pwm = GPIO.PWM(self.pwmPin, 60)
     self.pwm.start(0)
 
   def setSpeed(self, speed):
@@ -16,4 +17,3 @@ class PWM:
   def stop(self):
     self.pwm.stop()
     GPIO.cleanup()
-

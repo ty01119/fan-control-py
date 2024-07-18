@@ -1,5 +1,7 @@
-Adafruit_Blinka==8.45.2
+Adafruit_Blinka==8.46.0
+adafruit_circuitpython_dht==4.0.4
 adafruit_circuitpython_ssd1306==2.12.17
-paramiko==3.4.0
-Pillow==10.4.0
+adafruit_python_shell==1.8.1
+Pillow==9.4.0
 RPi.GPIO==0.7.1
+rpi_lgpio==0.6
